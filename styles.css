@@ -1,0 +1,240 @@
+/* --------------------- CSS Reset -------------------- */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul, dl {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*  ---------------------- Variables ---------------------- */
+
+:root{
+    --dark-primary-color: #FBC02D;
+    --light-primary-color: #FFF9C4;
+    --primary-color: #ffeb3b;
+    --text-icons: #212121;
+    --accent-color: #FF5722;
+    --primary-text: #212121;
+    --secondary-text: #757575;
+    --divider-color: #BDBDBD;
+    --heading-font: 'Anton', sans-serif;
+    --text-font: 'Poppins', sans-serif;
+}
+/*---------------------Nav bar------------------------------*/
+nav{
+    width: 100%;
+    display:flex;
+    flex-wrap:wrap;
+    background-color: #333;
+    }
+  
+  nav a {
+    text-decoration: none;
+    display:block;
+    padding: 15px 25px;
+    text-align: center;
+    background-color: #333;
+    color:white;
+    margin:0;
+    }
+  
+  nav a:hover {
+    background-color: var(--primary-color);
+    color: var(--primary-text);
+    }
+  
+  
+  nav .active {
+    background-color: var(--accent-color);
+    color: var(--main-txt-color);
+  }
+
+/* --------------------layout-------------------------------*/
+
+body{
+    font-family: var(--text-font);
+    line-height: 1.5;
+    font-size: 1.2em;
+    background: var(--divider-color);  
+}
+
+ul{
+    list-style-type: disc;
+    margin: 50px;
+}
+img{
+    height: 10%;
+    float: left;
+}
+h1{
+    font-family: var(--heading-font);
+    color: white;
+  }
+h2{
+    font-family: var(--heading-font);  
+  }
+  footer{
+    text-align: center;
+    padding: 20px;
+    color: var(--secondary-txt-color);
+  }
+
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+  }
+
+  .hero-image{
+    background: url(smoothie-hero.png) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image h1{
+   /* padding-top: 100px;
+    padding-left: 900px;*/
+    line-height: 100px;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 100px;
+}
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.aside {
+    flex: 30%;
+    background-color: var(--divider-color);
+    padding: 20px;
+  }
+/* Main column */
+.main {
+    flex: 70%;
+    background-color: var(--primary-color);
+    padding: 20px;
+  }
+
+  /* Fake image, just for this example */
+.fakeimg {
+    background-color: var(--secondary-text);
+    width: 100%;
+    padding: 20px;
+  }
+
+.aside h1{
+    color: var(--text-icons);
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.flex-container img{
+    float: none;
+
+}
+
+.ingredient-row{
+    width: 400px;
+    padding: 60px;
+}
+
+.flex-container h2{
+    background-color: var(--accent-color);
+}
+
+.body{
+    background-color: var(--light-primary-color);
+}
+video{
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+iframe{
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 10px auto;
+}
+#local-video{
+  width: 100%;
+  max-width: 1400px;
+  min-width: 500px;
+  margin: 40px auto;
+  overflow: auto;
+  background-color: var(--dark-primary-color);
+  padding-bottom: 40px;
+}
+#local-video h3{
+  color: var(--text-icons);
+  font-family: var(--heading-font);
+  text-align: center;
+  margin: 20px;
+  font-size: 1.5em;
+}
+
+#local-video p{
+  padding: 50px;
+}
+
